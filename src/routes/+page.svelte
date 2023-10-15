@@ -98,7 +98,7 @@
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="lg:bg-background bg-black">
+<div class="lg:bg-background">
     <nav
             class="main-container flex justify-center text-center lg:px-12 px-4 dark:bg-gray-950 overflow-hidden lg:overflow-hidden pb-12"
     >
