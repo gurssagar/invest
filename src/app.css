@@ -1,0 +1,148 @@
+@import url(https://fonts.bunny.net/css?family=plaster:400);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Eina02";
+  src: url("../static/Eina02-SemiBold.ttf");
+} */
+
+@font-face {
+  font-family: "Stacker";
+  src: url("../static/stacker.otf");
+}
+
+@font-face {
+  font-family: "Game of Squids";
+  src: url("../static/Game\ Of\ Squids.ttf");
+}
+
+@font-face {
+  font-family: "Plutur";
+  src: url("../static/Plutur.ttf");
+}
+
+@font-face {
+  font-family: "Plutur";
+  src: url("../static/ROBORIDGE.ttf");
+}
+
+@font-face {
+  font-family: "AnkhSanctuary";
+  src: url("../static/AnkhSanctuary.ttf");
+}
+
+@font-face {
+  font-family: "Space Age";
+  src: url("../static/space\ age.ttf");
+}
+
+@font-face {
+  font-family: "AgrozzaDemoRegular";
+  src: url("../static/AgrozzaDemoRegular.ttf");
+}
+
+@font-face {
+  font-family: "Gilgan";
+  src: url("../static/Gilgan.otf");
+}
+@font-face {
+    font-family: "";
+    src: url("../static/supersonic-rocketship.ttf");
+}
+
+@font-face {
+  font-family: "Elemental End";
+  src: url("../static/ElementalEnd.ttf");
+}
+
+@font-face {
+  font-family: "Supersonic Rocketship";
+  src: url("../static/Supersonic\ Rocketship.ttf");
+}
+
+@font-face {
+  font-family: "ComicNeueSansID";
+  src: url("../static/ComicNeueSansID.ttf");
+}
+
+
+
+@layer utilities {
+    .animation-delay-2000 {
+        animation-delay: 1.5s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 2.5s;
+    }
+}
+
+@keyframes -global-from-left {
+    0% {
+      transform: translateX(-150%);
+      opacity: 0 ;
+      margin: 0 ;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1 ;
+      margin: 0 ;
+    }
+}
+
+@keyframes -global-from-right {
+    0% {
+      transform: translateX(150%);
+      margin: 0;
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      margin: 0;
+      opacity: 1;
+    }
+}
+
+@keyframes -global-from-left-further {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+        margin: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        margin: 0;
+      }
+}
+
+@keyframes -global-blur-fade-in {
+  0% {
+      filter: blur(10px);
+      opacity: 0;
+
+    }
+    100% {
+      filter: none;
+      opacity: 1;
+
+    }
+}
+
+:root {
+  --text: #000010;
+  --background: #ffffff;
+  --primary: #1C20CC;
+  --secondary: #C2C7F5;
+  --accent: #2E46CD;
+  --cursor-width: 2px;
+  --b1: var(--background);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background);
+}

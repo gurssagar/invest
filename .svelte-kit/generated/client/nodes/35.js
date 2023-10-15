@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/Dashboard/Branch/CSE/First/mp/Books/+page.svelte";
